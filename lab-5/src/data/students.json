@@ -1,0 +1,81 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "age": 20,
+      "grade": "A",
+      "email": "john.doe@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Alice Smith",
+      "age": 19,
+      "grade": "B+",
+      "email": "alice.smith@example.com"
+    },
+    {
+      "id": "3",
+      "name": "Bob Johnson",
+      "age": 21,
+      "grade": "A-",
+      "email": "bob.johnson@example.com"
+    },
+    {
+      "id": "4",
+      "name": "Emma Lee",
+      "age": 18,
+      "grade": "A+",
+      "email": "emma.lee@example.com"
+    },
+    {
+      "id": "5",
+      "name": "Michael Brown",
+      "age": 20,
+      "grade": "B",
+      "email": "micheal.brown@example.com"
+    },
+    {
+      "id": "17e7",
+      "name": "Belal",
+      "age": "25",
+      "grade": "A+",
+      "email": "belal@gmail.com"
+    },
+    {
+      "id": "40ff",
+      "name": "Ahmed",
+      "age": "20",
+      "grade": "D",
+      "email": "belal@gmail.com"
+    },
+    {
+      "id": "877a",
+      "name": "Aly",
+      "age": "23",
+      "grade": "A+",
+      "email": "belal12@gmail.com"
+    },
+    {
+      "id": "9413",
+      "name": "Hamada",
+      "age": "25",
+      "grade": "A+",
+      "email": "gd@gmail.com"
+    },
+    {
+      "id": "551a",
+      "name": "Hesham",
+      "age": "24",
+      "grade": "A+",
+      "email": "h@example.com"
+    },
+    {
+      "id": "f0d6",
+      "name": "Mohamed",
+      "age": "28",
+      "grade": "A+",
+      "email": "belal12@gmail.com"
+    }
+  ]
+}

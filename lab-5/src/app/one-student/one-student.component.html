@@ -1,0 +1,13 @@
+<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+	{{ std.name }}
+</th>
+<td class="px-6 py-4">{{ std.age }}</td>
+<td class="px-6 py-4">{{ std.grade }}</td>
+<td class="px-6 py-4">{{ std.email }}</td>
+<td class="px-6 py-4">
+	<a
+		routerLink="/students/{{ std.id }}"
+		class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+		>show details</a
+	>
+</td>

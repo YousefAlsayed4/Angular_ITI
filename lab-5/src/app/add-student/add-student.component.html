@@ -1,0 +1,94 @@
+<form [formGroup]="checkForm">
+	<div class="-mx-3 flex flex-wrap">
+		<div class="w-full px-3 sm:w-1/2">
+			<div class="mb-5">
+				<label for="fName" class="mb-3 block text-base font-medium text-[#07074D]"> Name </label>
+				<input
+					type="text"
+					name="fName"
+					id="fName"
+					placeholder="Name"
+					class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+					formControlName="name"
+				/>
+				@if (!nameValid) {
+					<p class="text-red-500 text-sm">The name must be of length 3 or more</p>
+				}
+			</div>
+		</div>
+		<div class="w-full px-3 sm:w-1/2">
+			<div class="mb-5">
+				<label for="email" class="mb-3 block text-base font-medium text-[#07074D]"> Age </label>
+				<input
+					type="text"
+					name="lName"
+					id="lName"
+					placeholder="Age"
+					class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+					formControlName="age"
+				/>
+
+				@if (!ageValid) {
+					<p class="text-red-500 text-sm">The age must be a valid age</p>
+				}
+			</div>
+		</div>
+	</div>
+	<div class="flex">
+		<div class="w-1/2 px-3">
+			<div class="mb-5">
+				<label for="grade" class="mb-3 block text-base font-medium text-[#07074D]">grade</label>
+				<select
+					type="text"
+					name="grade"
+					id="grade"
+					placeholder="A+"
+					class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+					formControlName="grade"
+				>
+					<option value="A+">A+</option>
+					<option value="A-">A-</option>
+					<option value="A">A</option>
+					<option value="B+">B+</option>
+					<option value="B-">B-</option>
+					<option value="B">B</option>
+					<option value="C+">C+</option>
+					<option value="C-">C-</option>
+					<option value="C">C</option>
+					<option value="D+">D+</option>
+					<option value="D-">D-</option>
+					<option value="D">D</option>
+				</select>
+				@if (!gradeValid) {
+					<p class="text-red-500 text-sm">This field is required</p>
+				}
+			</div>
+		</div>
+
+		<div class="w-1/2 px-3">
+			<div class="mb-5">
+				<label for="email" class="mb-3 block text-base font-medium text-[#07074D]">Email</label>
+				<input
+					type="email"
+					name="email"
+					id="email"
+					placeholder="email@example.com"
+					class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+					formControlName="email"
+				/>
+				@if (!emailValid) {
+					<p class="text-red-500 text-sm">This field must be a valid email</p>
+				}
+			</div>
+		</div>
+	</div>
+	<div class="text-center">
+		<button
+			type="button"
+			class="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none"
+			(click)="checkData()"
+		>
+			Submit
+		</button>
+	</div>
+</form>
